@@ -18,33 +18,24 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name= "INSC_MST_COVERAGE_TYPE_I")
-public class InscMstCoverageType {
+@Table(name= "insc_mst_type_obj_grp")
+public class InscMstTypeObjGrp {
 	@Id
-	@Column (name="coverage_id", length=10, nullable = false)
-	private String imctCoverageId;
+	@Column (name="type_id", length=240, nullable = false)
+	private String imtogTypeId;
 	
-	@Column (name="description", length=12)
-	private String imctSupplierCode;
+	@Column (name="obj_grp", length=10, nullable = false)
+	private String imtogObjGrp;
 	
 	@Column (name="created_by", length=10)
-	private String imctCreatedBy;
+	private String imtogCreatedBy;
 	
 	@Column (name="created_date")
-	private Date imctCreatedDate;
+	private Date imtogCreatedDate;
 	
 	@Column (name="modified_by", length=10)
-	private String imctModifiedBy;
+	private String imtogModifiedBy;
 	
 	@Column (name="modified_date")
-	private Date imctModifiedDate;
-	
-	@Column (name="status", length=2)
-	private String imctStatus;
-	
-	@Column (name="top_begin")
-	private Integer imctTopBegin;
-	
-	@Column (name="top_end")
-	private Integer imctTopEnd;
+	private Date imtogModifiedDate;
 }
