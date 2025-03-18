@@ -19,18 +19,22 @@ import java.math.BigDecimal;
 @AllArgsConstructor
 @Entity
 @Table(name= "INSC_MST_PERTANGGUNGAN")
+@IdClass(InscMstPertanggunganCompKey.class)
 public class InscMstPertanggungan {
 	
 	@Id
 	@Column (name="coy_id", length=10, nullable = false)
 	private String imptgCoyId;
 	
+	@Id
 	@Column (name="type_id", length=10, nullable = false)
 	private String imptgTypeId;
 	
+	@Id
 	@Column (name="top_id", nullable = false)
 	private Integer imptgTopId;
 	
+	@Id
 	@Column (name="used", length=2, nullable = false)
 	private String imptgUsed;
 	
@@ -40,9 +44,11 @@ public class InscMstPertanggungan {
 	@Column (name="npv")
 	private BigDecimal imptgNpv;
 	
+	@Id
 	@Column (name="type_rate", length=5, nullable = false)
 	private String imptgTypeRate;
 	
+	@Id
 	@Column (name="coverage_id", length=10, nullable = false)
 	private String imptgCoverageId;
 	
