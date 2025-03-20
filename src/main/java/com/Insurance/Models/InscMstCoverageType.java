@@ -18,13 +18,13 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name= "INSC_MST_COVERAGE_TYPE_I")
+@Table(name= "INSC_MST_COVERAGE_TYPE")
 public class InscMstCoverageType {
 	@Id
 	@Column (name="coverage_id", length=10, nullable = false)
 	private String imctCoverageId;
 	
-	@Column (name="description", length=12)
+	@Column (name="description", length=100)
 	private String imctSupplierCode;
 	
 	@Column (name="created_by", length=10)
