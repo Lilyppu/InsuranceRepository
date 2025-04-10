@@ -19,13 +19,13 @@ public class ControllerInscMstStatOfClaim {
 	@Autowired
 	ServiceInscMstStatOfClaim servIMSOC;
 	
-	@GetMapping("/insc/getImsocAll")
+	@GetMapping("/Insurance/getImsocAll")
 	public List<InscMstStatOfClaim> getImsocAll(){
 		return servIMSOC.getImsocAll();
 	}
 	
-	@GetMapping("/insc/getImsocByCoverageIdCU")
-	public Optional<InscMstStatOfClaim> getImsocByCoverageIdCU(String coverageid){
-		return servIMSOC.getImsocByCoverageIdCU(coverageid);
+	@GetMapping("/Insurance/getImsocByCoverageIdList")
+	public List<InscMstStatOfClaim> getImsocByCoverageIdList(String coverageid){
+		return servIMSOC.getImsocByCoverageIdList(coverageid);
 	}
 }

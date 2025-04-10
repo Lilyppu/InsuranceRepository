@@ -19,8 +19,8 @@ public class ServiceInscTrnContDtls {
 		return repoItcd.findAll();
 	}
 	
-	public List<InscTrnContDtls> getContDtlsListByApplNo(String ApplNo){
-		return repoItcd.findByItcdApplNo(ApplNo);
+	public List<InscTrnContDtls> getContDtlsListByApplNo(String applno){
+		return repoItcd.findByItcdApplNoContaining(applno);
 	}
 
 }

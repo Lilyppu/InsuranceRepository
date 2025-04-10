@@ -19,13 +19,13 @@ public class ControllerInscTrnOrderOut {
 	@Autowired
 	ServiceInscTrnOrderOut servITOO;
 	
-	@GetMapping("/insc/getItooAll")
+	@GetMapping("/Insurance/getItooAll")
 	public List<InscTrnOrderOut> getItooAll(){
 		return servITOO.getItooAll();
 	}
 	
-	@GetMapping("/insc/getItooByContractNoCU")
-	public Optional<InscTrnOrderOut> getItooByContractNoCU(String contractno){
-		return servITOO.getItooByContractNoCU(contractno);
+	@GetMapping("/Insurance/getItooByContractNoList")
+	public List<InscTrnOrderOut> getItooByContractNoList(String contractno){
+		return servITOO.getItooByContractNoList(contractno);
 	}
 }

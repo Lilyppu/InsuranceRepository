@@ -19,11 +19,13 @@ import java.math.BigDecimal;
 @AllArgsConstructor
 @Entity
 @Table(name= "insc_mst_stat_of_claim")
+@IdClass(InscMstStatOfClaimCompKey.class)
 public class InscMstStatOfClaim {
 	@Id
 	@Column (name="coverage_id", length=10, nullable = false)
 	private String imsocCoverageId;
 	
+	@Id
 	@Column (name="status_id", length=6)
 	private String imsocStatusId;
 	

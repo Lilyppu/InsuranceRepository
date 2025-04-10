@@ -19,11 +19,13 @@ import java.math.BigDecimal;
 @AllArgsConstructor
 @Entity
 @Table(name= "insc_mst_type_obj_grp")
+@IdClass(InscMstTypeObjGrpCompKey.class)
 public class InscMstTypeObjGrp {
 	@Id
 	@Column (name="type_id", length=240, nullable = false)
 	private String imtogTypeId;
 	
+	@Id
 	@Column (name="obj_grp", length=10, nullable = false)
 	private String imtogObjGrp;
 	

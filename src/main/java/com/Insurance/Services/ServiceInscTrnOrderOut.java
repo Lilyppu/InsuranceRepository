@@ -18,7 +18,7 @@ public class ServiceInscTrnOrderOut {
 		return repoITOO.findAll();
 	}
 	
-	public Optional<InscTrnOrderOut> getItooByContractNoCU(String contractno){
-		return repoITOO.findByItooContractNo(contractno);
+	public List<InscTrnOrderOut> getItooByContractNoList(String contractno){
+		return repoITOO.findByItooContractNoContaining(contractno);
 	}
 }

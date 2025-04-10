@@ -19,12 +19,12 @@ public class ControllerInscMstRateProduct {
 	@Autowired
 	ServiceInscMstRateProduct servIMRP;
 	
-	@GetMapping("/insc/getImrpAll")
+	@GetMapping("/Insurance/getImrpAll")
 	public List<InscMstRateProduct> getImprAll(){
 		return servIMRP.getImrpAll();
 	}
 	
-	@GetMapping("/insc/getImrpByCoyIdList")
+	@GetMapping("/Insurance/getImrpByCoyIdList")
 	public List<InscMstRateProduct> getImrpByCoyIdList(String coyid){
 		return servIMRP.getImrpByCoyIdList(coyid);
 	}

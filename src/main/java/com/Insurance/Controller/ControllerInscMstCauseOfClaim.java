@@ -19,12 +19,12 @@ public class ControllerInscMstCauseOfClaim {
 	@Autowired
 	ServiceInscMstCauseOfClaim servIMCOC;
 	
-	@GetMapping("/insc/getImcocAll")
+	@GetMapping("/Insurance/getImcocAll")
 	public List<InscMstCauseOfClaim> getImcocAll(){
 		return servIMCOC.getImcocAll();
 	}
 	
-	@GetMapping("/insc/getImcocByCoverageIdList")
+	@GetMapping("/Insurance/getImcocByCoverageIdList")
 	public List<InscMstCauseOfClaim> getImcocByCoverageIdList(String coverageid){
 		return servIMCOC.getImcocByCoverageIdList(coverageid);
 	}

@@ -18,7 +18,7 @@ public class ServiceInscTrnOrderIn {
 		return repoITOI.findAll();
 	}
 	
-	public Optional<InscTrnOrderIn> getItoiByContractNoCU(String contractno){
-		return repoITOI.findByItoiContractNo(contractno);
+	public List<InscTrnOrderIn> getItoiByContractNoList(String contractno){
+		return repoITOI.findByItoiContractNoContaining(contractno);
 	}
 }

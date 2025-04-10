@@ -13,6 +13,6 @@ import com.Insurance.Models.InscMstRateProductCompKey;
 import jakarta.transaction.Transactional;
 public interface IInscMstRateProductRepository extends JpaRepository<InscMstRateProduct,InscMstRateProductCompKey>{
 	
-	public List<InscMstRateProduct> findByImrpCoyId(String coyid);
+	public List<InscMstRateProduct> findByImrpCoyIdContaining(String coyid);
 
 }

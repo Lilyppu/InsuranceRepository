@@ -19,12 +19,12 @@ public class ControllerInscMstProductBranch {
 	@Autowired
 	ServiceInscMstProductBranch servIMPB;
 	
-	@GetMapping("/insc/getImpbAll")
+	@GetMapping("/Insurance/getImpbAll")
 	public List<InscMstProductBranch> getImpbAll(){
 		return servIMPB.getImpbAll();
 	}
 	
-	@GetMapping("/insc/getImpbByProductNoCU")
+	@GetMapping("/Insurance/getImpbByProductNoCU")
 	public Optional<InscMstProductBranch> getImpbByProductNoCU(String productno){
 		return servIMPB.getImpbByProductNoCU(productno);
 	}

@@ -19,12 +19,12 @@ public class ControllerInscTrnPrepayInsc {
 	@Autowired
 	ServiceInscTrnPrepayInsc servITPI;
 	
-	@GetMapping("/insc/getItpiAll")
+	@GetMapping("/Insurance/getItpiAll")
 	public List<InscTrnPrepayInsc> getItpiAll(){
 		return servITPI.getItpiAll();
 	}
 	
-	@GetMapping("/insc/getItpiByCertNoCU")
+	@GetMapping("/Insurance/getItpiByCertNoCU")
 	public Optional<InscTrnPrepayInsc> getItpiByCertNoCU(String certno){
 		return servITPI.getItpiByCertNoCU(certno);
 	}

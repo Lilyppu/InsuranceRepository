@@ -14,5 +14,5 @@ import jakarta.persistence.IdClass;
 import jakarta.transaction.Transactional;
 public interface IInscMstProductCvrgRepository extends JpaRepository<InscMstProductCvrg,InscMstProductCvrgCompKey>{
 	
-	public List<InscMstProductCvrg> findByImpcgProductNo(String productno);
+	public List<InscMstProductCvrg> findByImpcgProductNoContaining(String productno);
 }

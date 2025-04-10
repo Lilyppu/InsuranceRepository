@@ -19,13 +19,13 @@ public class ControllerInscMstTypeObjGrp {
 	@Autowired
 	ServiceInscMstTypeObjGrp servIMCT;
 	
-	@GetMapping("/insc/getImtogAll")
+	@GetMapping("/Insurance/getImtogAll")
 	public List<InscMstTypeObjGrp> getImtogAll(){
 		return servIMCT.getImtogAll();
 	}
 	
-	@GetMapping("/insc/getImtogByTypeIdCU")
-	public Optional<InscMstTypeObjGrp> getImtogByTypeIdCU(String typeid){
-		return servIMCT.getImtogByTypeIdCU(typeid);
+	@GetMapping("/Insurance/getImtogByTypeIdList")
+	public List<InscMstTypeObjGrp> getImtogByTypeIdList(String typeid){
+		return servIMCT.getImtogByTypeIdList(typeid);
 	}
 }

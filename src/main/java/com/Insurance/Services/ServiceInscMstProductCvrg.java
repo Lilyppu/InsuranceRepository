@@ -19,6 +19,6 @@ public class ServiceInscMstProductCvrg {
 	}
 	
 	public List<InscMstProductCvrg> getImpcgByProductNoList(String productno){
-		return repoIMPCG.findByImpcgProductNo(productno);
+		return repoIMPCG.findByImpcgProductNoContaining(productno);
 	}
 }

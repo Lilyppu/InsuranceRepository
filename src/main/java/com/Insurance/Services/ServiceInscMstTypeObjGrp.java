@@ -18,7 +18,7 @@ public class ServiceInscMstTypeObjGrp {
 		return repoIMTOG.findAll();
 	}
 	
-	public Optional<InscMstTypeObjGrp> getImtogByTypeIdCU(String typeid){
-		return repoIMTOG.findByImtogTypeId(typeid);
+	public List<InscMstTypeObjGrp> getImtogByTypeIdList(String typeid){
+		return repoIMTOG.findByImtogTypeIdContaining(typeid);
 	}
 }

@@ -19,12 +19,12 @@ public class ControllerInscTrnPaymentDtls {
 	@Autowired
 	ServiceInscTrnPaymentDtls servITPD;
 	
-	@GetMapping("/insc/getItpdAll")
+	@GetMapping("/Insurance/getItpdAll")
 	public List<InscTrnPaymentDtls> getItpdAll(){
 		return servITPD.getItpdAll();
 	}
 	
-	@GetMapping("/insc/getItpdByGroupNoCU")
+	@GetMapping("/Insurance/getItpdByGroupNoCU")
 	public Optional<InscTrnPaymentDtls> getItpdByGroupNoCU(String groupno){
 		return servITPD.getItpdByGroupNoCU(groupno);
 	}

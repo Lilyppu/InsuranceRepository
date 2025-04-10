@@ -19,12 +19,12 @@ public class ControllerInscMstKodePlat {
 	@Autowired
 	ServiceInscMstKodePlat servIMKP;
 	
-	@GetMapping("/insc/getImkpAll")
+	@GetMapping("/Insurance/getImkpAll")
 	public List<InscMstKodePlat> getImkpAll(){
 		return servIMKP.getImkpAll();
 	}
 	
-	@GetMapping("/insc/getImkpByKodePlatCU")
+	@GetMapping("/Insurance/getImkpByKodePlatCU")
 	public Optional<InscMstKodePlat> getImkpByKodePlatCU(String kodeplat){
 		return servIMKP.getImkpByKodePlatCU(kodeplat);
 	}

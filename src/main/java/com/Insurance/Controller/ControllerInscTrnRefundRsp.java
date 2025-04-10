@@ -19,12 +19,12 @@ public class ControllerInscTrnRefundRsp {
 	@Autowired
 	ServiceInscTrnRefundRsp servITRR;
 	
-	@GetMapping("/insc/getItrrAll")
+	@GetMapping("/Insurance/getItrrAll")
 	public List<InscTrnRefundRsp> getItrrAll(){
 		return servITRR.getItrrAll();
 	}
 	
-	@GetMapping("/insc/getItrrByRefundNoCU")
+	@GetMapping("/Insurance/getItrrByRefundNoCU")
 	public Optional<InscTrnRefundRsp> getItrrByRefundNoCU(String refundno){
 		return servITRR.getItrrByRefundNoCU(refundno);
 	}

@@ -18,7 +18,7 @@ public class ServiceInscMstStatOfClaim {
 		return repoIMSOC.findAll();
 	}
 	
-	public Optional<InscMstStatOfClaim> getImsocByCoverageIdCU(String coverageid){
-		return repoIMSOC.findByImsocCoverageId(coverageid);
+	public List<InscMstStatOfClaim> getImsocByCoverageIdList(String coverageid){
+		return repoIMSOC.findByImsocCoverageIdContaining(coverageid);
 	}
 }

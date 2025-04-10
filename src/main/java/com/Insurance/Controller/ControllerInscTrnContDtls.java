@@ -24,8 +24,8 @@ public class ControllerInscTrnContDtls {
 	}
 	
 	@GetMapping("/Insurance/getContDtlsListByApplNo")
-	public List<InscTrnContDtls> getContDtlsListByApplNo(String ApplNo){
-		return servItcd.getContDtlsListByApplNo(ApplNo);
+	public List<InscTrnContDtls> getContDtlsListByApplNo(String applno){
+		return servItcd.getContDtlsListByApplNo(applno);
 	}
 
 }

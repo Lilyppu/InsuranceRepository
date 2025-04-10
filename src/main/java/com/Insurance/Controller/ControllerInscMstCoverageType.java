@@ -19,12 +19,12 @@ public class ControllerInscMstCoverageType {
 	@Autowired
 	ServiceInscMstCoverageType servIMCT;
 	
-	@GetMapping("/insc/getImctAll")
+	@GetMapping("/Insurance/getImctAll")
 	public List<InscMstCoverageType> getImctAll(){
 		return servIMCT.getImctAll();
 	}
 	
-	@GetMapping("/insc/getImctByCoverageIdCU")
+	@GetMapping("/Insurance/getImctByCoverageIdCU")
 	public Optional<InscMstCoverageType> getImctByCoverageIdCU(String coverageid){
 		return servIMCT.getImctByCoverageIdCU(coverageid);
 	}

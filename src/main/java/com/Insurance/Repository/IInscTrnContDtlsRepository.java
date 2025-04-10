@@ -13,6 +13,6 @@ import com.Insurance.Models.InscTrnContDtlsCompKey;
 @Repository
 public interface IInscTrnContDtlsRepository extends JpaRepository<InscTrnContDtls,InscTrnContDtlsCompKey>{
 	
-	public List<InscTrnContDtls> findByItcdApplNo(String ApplNo);
+	public List<InscTrnContDtls> findByItcdApplNoContaining(String applno);
 
 }

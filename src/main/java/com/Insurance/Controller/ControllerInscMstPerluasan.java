@@ -19,12 +19,12 @@ public class ControllerInscMstPerluasan {
 	@Autowired
 	ServiceInscMstPerluasan servIMPAN;
 	
-	@GetMapping("/insc/getImpanAll")
+	@GetMapping("/Insurance/getImpanAll")
 	public List<InscMstPerluasan> getImpanAll(){
 		return servIMPAN.getImpanAll();
 	}
 	
-	@GetMapping("/insc/getImpanByCoyIdList")
+	@GetMapping("/Insurance/getImpanByCoyIdList")
 	public List<InscMstPerluasan> getImpanByCoyIdList(String coyid){
 		return servIMPAN.getImpanByCoyIdList(coyid);
 	}

@@ -14,5 +14,5 @@ import jakarta.persistence.IdClass;
 import jakarta.transaction.Transactional;
 public interface IInscTrnOrderInRepository extends JpaRepository<InscTrnOrderIn,InscTrnOrderInCompKey>{
 	
-	public Optional<InscTrnOrderIn> findByItoiContractNo(String contractno);
+	public List<InscTrnOrderIn> findByItoiContractNoContaining(String contractno);
 }

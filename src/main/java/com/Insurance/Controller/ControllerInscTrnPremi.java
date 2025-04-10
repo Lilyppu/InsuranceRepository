@@ -19,12 +19,12 @@ public class ControllerInscTrnPremi {
 	@Autowired
 	ServiceInscTrnPremi servITP;
 	
-	@GetMapping("/insc/getItpAll")
+	@GetMapping("/Insurance/getItpAll")
 	public List<InscTrnPremi> getItpAll(){
 		return servITP.getItpAll();
 	}
 	
-	@GetMapping("/insc/getItpByApplNoCU")
+	@GetMapping("/Insurance/getItpByApplNoCU")
 	public Optional<InscTrnPremi> getItpByApplNoCU(String applno){
 		return servITP.getItpByApplNoCU(applno);
 	}

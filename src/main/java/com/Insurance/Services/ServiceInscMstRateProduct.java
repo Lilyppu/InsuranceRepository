@@ -19,6 +19,6 @@ public class ServiceInscMstRateProduct {
 	}
 	
 	public List<InscMstRateProduct> getImrpByCoyIdList(String coyid){
-		return repoIMRP.findByImrpCoyId(coyid);
+		return repoIMRP.findByImrpCoyIdContaining(coyid);
 	}
 }

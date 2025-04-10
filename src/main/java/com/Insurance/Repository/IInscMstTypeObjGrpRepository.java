@@ -8,10 +8,11 @@ import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 
 import com.Insurance.Models.InscMstTypeObjGrp;
+import com.Insurance.Models.InscMstTypeObjGrpCompKey;
 
 import jakarta.transaction.Transactional;
-public interface IInscMstTypeObjGrpRepository extends JpaRepository<InscMstTypeObjGrp,String>{
+public interface IInscMstTypeObjGrpRepository extends JpaRepository<InscMstTypeObjGrp,InscMstTypeObjGrpCompKey>{
 	
-	public Optional<InscMstTypeObjGrp> findByImtogTypeId(String typeid);
+	public List<InscMstTypeObjGrp> findByImtogTypeIdContaining(String typeid);
 
 }
